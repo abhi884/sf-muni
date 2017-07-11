@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SF Muni</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <h1>SF Muni Live Vehicle Locations and Routes</h1>
+</header>
+<body>
+  <div id="map"></div>
+  <div id="options">
+    <div style="margin-bottom: 10px;">
+        <span class="option-legend">Layers:</span>
+        <select id="layer-select"
+                data-placeholder="Select Layer" 
+                data-allow-clear="true"  
+                multiple="multiple">
+        </select>
+    </div>
+    <div>
+        <span class="option-legend">Routes:</span>
+        <select id="route-select"
+                data-placeholder="Select Routes" 
+                data-allow-clear="true" 
+                multiple="multiple">
+        </select>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARZkGkTPFxnCmM55qvPIg7DGcJk0_MsUY"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="build/main.bundle.min.js"></script>
+
+</body>
+</html>
